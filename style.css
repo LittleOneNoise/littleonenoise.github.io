@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #242323;
     font-family: "Montserrat", sans-serif;
@@ -62,6 +66,7 @@ body {
   margin: auto;
   border-radius: 2vw;
   margin-bottom: 10vh;
+  /* height: 25vh; */
 }
 
 .project_pic {
@@ -70,11 +75,14 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
+  /* height: 100%; */
 
 }
 
 .project_pic img {
-  width: 100%;
+ /* height: inherit; */
+ /* width: fit-content; */
+ margin: 1.5vw;
 }
 
 .project_text {
@@ -144,6 +152,24 @@ body {
 .link_new_tab img {
   width: 1.2vw;
   margin: auto 0;
+}
+
+.div_links {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div_link {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo_link {
+  height: 2.5vw;
+  margin: 0.5vw -1.5vw 0 0;
 }
 
 footer {
